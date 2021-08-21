@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: grey; color: lightblue;">
+    <h1>KALKULATOR PENAMBAHAN</h1>
+    <input type="text" placeholder="Masukan Angka Pertama" id="angkapertama"> <br>
+    <input type="text" placeholder="Masukan Angka Kedua" id="angkakedua"> <br>
+
+    <button onclick="hitungtambah()">hasil</button> <br>
+
+    <input type="text" placeholder="hasil" id="hasil">
+
+    <script>
+
+        function hitungtambah() {
+            var angka1 = document.getElementById('angkapertama').value
+            var angka2 = document.getElementById('angkakedua').value
+
+            var angkabaru1 = Number(angka1)
+            var angkabaru2 = Number(angka2)
+
+            var hasil = angkabaru1+angkabaru2
+
+            document.getElementById('hasil').value = hasil
+
+        }
+    </script>
+</body>
+</html>
